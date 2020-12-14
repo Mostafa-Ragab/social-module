@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header/Header";
+import Sidebar from "./components/Sidebar/Sidebar";
+import { connect } from "react-redux";
+import SignInSide from "./components/Login/SignInSide";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(user) {
+	console.log(user);
+
+	return (
+		<div className="App">
+			{user ? (
+				<SignInSide />
+			) : (
+				<>
+					<Header />
+					<Sidebar />
+				</>
+			)}
+		</div>
+	);
 }
 
-export default App;
+const mapStateToProps = ({ user }) => ({
+	user: user.currentUser,
+});
+
+export default connect(mapStateToProps)(App);
