@@ -24,8 +24,8 @@ function MessageSender(user) {
 			username: user.user.displayName,
 			image: imageUrl,
 		});
-		setInput("");
-		setImageUrl("");
+		setInput(" ");
+		setImageUrl(" ");
 	};
 	return (
 		<div className="messageSender">
