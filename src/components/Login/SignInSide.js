@@ -137,8 +137,9 @@ export default function SignInSide() {
 							color="primary"
 							className={classes.submit}
 						>
-							Sign In (username: mostafa@gmail.com password: 123456)
+							Sign In
 						</Button>
+						<P>(username: mostafa@gmail.com password: 123456)</P>
 						<Button
 							type="submit"
 							fullWidth
