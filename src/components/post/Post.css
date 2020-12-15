@@ -37,6 +37,10 @@
 }
 
 .post__options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-gap: 15px;
+
   padding-top: 10px;
   border-top: 1px solid lightgray;
   display: flex;
@@ -44,9 +48,13 @@
   font-size: medium;
   color: gray;
   cursor: pointer;
-  padding: 15px;
+  padding: 5px;
 }
-
+@media (max-width: 1000px) {
+  .post__options {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
 .post__option {
   display: flex;
   align-items: center;
