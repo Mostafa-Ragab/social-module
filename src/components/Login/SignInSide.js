@@ -139,7 +139,7 @@ export default function SignInSide() {
 						>
 							Sign In
 						</Button>
-						<P>(username: mostafa@gmail.com password: 123456)</P>
+						<p>(username: mostafa@gmail.com password: 123456)</p>
 						<Button
 							type="submit"
 							fullWidth
