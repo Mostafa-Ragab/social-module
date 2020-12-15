@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
-import Sidebar from "./components/Sidebar/Sidebar";
 import { connect } from "react-redux";
 import SignInSide from "./components/Login/SignInSide";
 import { setCurrentUser } from "./redux/user/user-actions";
@@ -42,7 +41,6 @@ class App extends React.Component {
 					<>
 						<Header />
 						<div className="app__body">
-							{/* <Sidebar /> */}
 							<Feed />
 							<Widgets />
 						</div>

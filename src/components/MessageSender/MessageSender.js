@@ -31,7 +31,7 @@ function MessageSender(user) {
 	return (
 		<div className="messageSender">
 			<div className="messageSender__top">
-				<Avatar src={user.user.photoURL} />
+				<Avatar src={user.photoURL} />
 				<form>
 					<input
 						value={input}

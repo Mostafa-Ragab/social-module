@@ -3,4 +3,12 @@
 }
 .app__body {
   display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+@media (max-width: 1000px) {
+  .app__body {
+    display: flex;
+    width: 500px;
+  }
 }
