@@ -11,7 +11,6 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 function MessageSender(user) {
-	console.log(user);
 	const [input, setInput] = useState("");
 	const [imageUrl, setImageUrl] = useState("");
 
@@ -25,8 +24,8 @@ function MessageSender(user) {
 			username: user.user.displayName,
 			image: imageUrl,
 		});
-		setInput(" ");
-		setImageUrl(" ");
+		setInput("");
+		setImageUrl("");
 	};
 	return (
 		<div className="messageSender">
